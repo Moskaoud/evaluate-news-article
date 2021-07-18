@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Sentiment Analyzer</title>
+  <!-- <script src="../js/formHandler.js" ></script> -->
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <p>Enter a URL of an article </p>
+      <section>
+        <!-- <script  src="../js/formHandler.js" ></script> -->
+        <form id="form" onsubmit="return Client.handleSubmit(event)">
+          <label for="article-url">URL</label>
+          <input id="url" type="text" name="url" value="" placeholder="Enter Article URL here" />
+          <input onclick="return Client.handleSubmit(event)" type="submit" id="submit" value="Submit"
+          onsubmit="return Client.handleSubmit(event)"
+          >
+          
+          <!-- <button onclick="return Client.handleSubmit(event)" type="submit" id="submit" >Submit</button> -->
+          <!-- <a onclick="handleSubmit()" href="#" >Submit</a> -->
+          <!-- <a href="javascript:alert('Hello!');">Clicky</a> -->
+        </form>
+      </section>
+
+      <section>
+        <strong>Form Results:</strong>
+        <div id="agreement"></div>
+        <div id="subjectivity"></div>
+        <div id="confidence"></div>
+        <div id="irony"></div>
+        <div id="score_tag"></div>
+      </section>
+    </div>
+  </main>
+  <!-- <script  type="text/javascript" src="../js/formHandler.js" ></script> -->
+
+  <!-- <script>
+    function handleSubmit(){
+      alert("is this defined")
+    }
+  </script> -->
+  <!-- <script src="../js/formHandler.js" ></script> -->
+  <!-- <link type="text/javascript" href="../js/formHandler.js"> -->
+  <script>
+      // Check that service workers are supported
+      if ('serviceWorker' in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js')
+        })
+      }
+    </script>
+</body>
+
+</html>
