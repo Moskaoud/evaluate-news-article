@@ -14,7 +14,10 @@ A web project that allows users to run Natural Language Processing (NLP) on arti
 - `npm run build-dev` start development environment
 - `npm run build-prod` start production environment
 
-
+## Screenshots
+<img src="https://github.com/Moskaoud/evaluate-news-article/blob/main/evaluate.png" >
+<img src="https://github.com/Moskaoud/evaluate-news-article/blob/main/invalid.png" >
+<img src="https://github.com/Moskaoud/evaluate-news-article/blob/main/test%20jest.png" >
 ## Sentiment Analysis
 Analyze the sentiment of social networks, reviews, or customer satisfaction surveys
 Sentiment Analysis (also known as Opinion Mining) applies natural language processing, text analytics, and computational linguistics to identify and extract subjective information from various types of content.
