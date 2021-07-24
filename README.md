@@ -10,12 +10,9 @@ A web project that allows users to run Natural Language Processing (NLP) on arti
 ## Getting started and run
 
 - `npm install` install dependencies
-
 - `npm run start` start project
-
--`npm run build-dev` start development environment
-
--`npm run build-prod` start production environment
+- `npm run build-dev` start development environment
+- `npm run build-prod` start production environment
 
 
 ## Sentiment Analysis
