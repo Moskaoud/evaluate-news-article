@@ -8,14 +8,14 @@ A web project that allows users to run Natural Language Processing (NLP) on arti
 - Jest Framework for Unit Testing 
 
 ## Getting started and run
-install dependencies
-- `npm install`
-start project
-- `npm run start`
-start development environment
--`npm run build-dev`
-start production environment
--`npm run build-prod`
+
+- `npm install` install dependencies
+
+- `npm run start` start project
+
+-`npm run build-dev` start development environment
+
+-`npm run build-prod` start production environment
 
 
 ## Sentiment Analysis
