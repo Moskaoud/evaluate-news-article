@@ -17,9 +17,8 @@
           <label for="article-url">URL</label>
           <input id="url" type="text" name="url" value="" placeholder="Enter Article URL here" />
           <input onclick="return Client.handleSubmit(event)" type="submit" id="submit" value="Submit"
-          onsubmit="return Client.handleSubmit(event)"
-          >
-          
+            onsubmit="return Client.handleSubmit(event)">
+
           <!-- <button onclick="return Client.handleSubmit(event)" type="submit" id="submit" >Submit</button> -->
           <!-- <a onclick="handleSubmit()" href="#" >Submit</a> -->
           <!-- <a href="javascript:alert('Hello!');">Clicky</a> -->
@@ -28,12 +27,39 @@
 
       <section>
         <strong>Form Results:</strong>
-        <div id="agreement"></div>
-        <div id="subjectivity"></div>
-        <div id="confidence"></div>
-        <div id="irony"></div>
-        <div id="score_tag"></div>
+        <p>Agreement: <span id="agreement"></span></p>        
+        <p>Subjectivity: <span id="subjectivity"></span></p>        
+        <p>Confidence: <span id="confidence"></span></p>      
+        <p>Irony: <span id="irony"></span></p>        
+        <p>Score Tag: <span id="score_tag"></span></p>
+        
       </section>
+      <!-- https://learn.meaningcloud.com/developer/sentiment-analysis/2.1/doc/response
+
+    agreement	
+    Marks the agreement between the sentiments detected in the text, 
+    the sentence or the segment it refers to. 
+    It has two possible values:
+      AGREEMENT: the different elements have the same polarity.
+      DISAGREEMENT: there is disagreement between the different elements' polarity.
+
+    score_tag	
+      Polarity of the element it refers to: global polarity,polarity_term,
+      sentimented_concept, sentimented_entity, segment or sentence. 
+      Possible values:
+          P+: strong positive
+          P: positive
+          NEU: neutral
+          N: negative
+          N+: strong negative
+          NONE: without polarity
+    irony	
+    Indicates the irony of the text. 
+    It has two possible values:
+    NONIRONIC: the text does not have any irony marks.
+    IRONIC: the text has irony marks.
+      -->
+
     </div>
   </main>
   <!-- <script  type="text/javascript" src="../js/formHandler.js" ></script> -->
@@ -43,9 +69,8 @@
       alert("is this defined")
     }
   </script> -->
-  <!-- <script src="../js/formHandler.js" ></script> -->
-  <!-- <link type="text/javascript" href="../js/formHandler.js"> -->
-  <script>
+  <script src="../js/formHandler.js"></script>
+  <!-- <script>
       // Check that service workers are supported
       if ('serviceWorker' in navigator) {
         // Use the window load event to keep the page load performant
@@ -53,7 +78,7 @@
           navigator.serviceWorker.register('/service-worker.js')
         })
       }
-    </script>
+    </script> -->
 </body>
 
 </html>

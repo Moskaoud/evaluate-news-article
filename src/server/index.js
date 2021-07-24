@@ -39,19 +39,20 @@ app.get('/', function (req, res) {
 // this error for big and long result requests
 
 let getData = async (url = '') => {
-  console.log('URL -> ', url)
+  //console.log('URL -> ', url)
   var request = await fetch(url)
   try {
     // Transform into JSON
     var projectData = await request.json()
-   // console.log('El GetData =>', projectData)
+    // server log appear in console
+    // console.log('El GetData =>', projectData)
     let res = {}
     res.score_tag = projectData.score_tag;
     res.agreement = projectData.agreement;
     res.subjectivity = projectData.subjectivity;
     res.confidence = projectData.confidence;
     res.irony = projectData.irony;
-
+    // server log appear in console
     // console.log("RES 9 ", res)
 
     return res
@@ -68,7 +69,7 @@ app.post('/msg', async (req, res) => {
   let inUrl = req.body.url
   let URL = `${BASE_URL}key=${KEY}&url=${inUrl}&lang=en`
   JSONDataM = await getData(URL)
-// console.log('DDD',JSONDataM)
+  // console.log('DDD',JSONDataM)
 })
 
 //GET route returns data object
